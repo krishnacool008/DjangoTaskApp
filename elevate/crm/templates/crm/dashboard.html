@@ -1,0 +1,14 @@
+{% extends 'crm/base.html' %}
+
+<html>
+
+    {% block content %}
+        <h3>Dashboard here!</h3>
+
+        <p>User Information</p>
+        <hr>
+
+        <a href="{% url 'logout' %}">Logout</a>
+    {% endblock content %}
+    
+</html>

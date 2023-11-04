@@ -1,0 +1,115 @@
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1da1f2;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #1991da;
+        }
+
+        .sidebar ul li.active {
+            background-color: #ffffff;
+            color: #1da1f2;
+        }
+
+        .main {
+            width: 80%;
+            background-color: #f5f8fa;
+            overflow-y: scroll;
+        }
+
+        .main h1 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+            border-bottom: 1px solid #e6ecf0;
+        }
+
+        .main .tweet {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            border-bottom: 1px solid #e6ecf0;
+        }
+
+        .main .tweet img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .main .tweet .content {
+            flex-grow: 1;
+        }
+
+        .main .tweet .content p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .main .tweet .content span {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #657786;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li class="active"><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-hashtag"></i> Explore</li>
+                <li><i class="fas fa-bell"></i> Notifications</li>
+                <li><i class="fas fa-envelope"></i> Messages</li>
+                <li><i class="fas fa-bookmark"></i> Bookmarks</li>
+                <li><i class="fas fa-list"></i> Lists</li>
+                <li><i class="fas fa-user"></i> Profile</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+                <li><i class="fas fa-feather-alt"></i> Tweet</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>Home</h1>
+            <div class="tweet">
+                <img src="https://pbs.twimg.com/profile_images/1414994712158707713/7aXUJ4cO_400x400.jpg" alt="Bing">
+                <div class="content">
+                    <p>Hello, this is Bing. I can help you with web searches, content generation, and more. 😊</p>
+                    <span>Bing @Bing · 5m</span>
+                </div>
+            </div>
+            
+             <!-- more tweets here -->
+             
+         </div>
+    </div>
+</body>
+</html>

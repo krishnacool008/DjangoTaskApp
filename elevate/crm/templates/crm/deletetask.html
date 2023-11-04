@@ -1,0 +1,18 @@
+{% extends 'crm/base.html' %}
+
+<html>
+
+    {% block content %}
+
+        <h3>Warning!</h3>
+        <hr>
+
+        <form action="" method="post">
+            {% csrf_token %}
+            <p>Are you sure you want to delete the task?</p>
+            <input type="submit" value="Delete">
+        </form>
+        
+    {% endblock content %}
+    
+</html>

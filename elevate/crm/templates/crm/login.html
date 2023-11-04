@@ -1,0 +1,19 @@
+{% extends 'crm/base.html' %}
+
+<html>
+
+    {% block content %}
+        <h3>Login here!</h3>
+
+        <p>This is where you can login</p>
+        <hr>
+
+        <form action="" method="post">
+            {% csrf_token %}
+            {{LoginForm.as_p}}
+            <input type="submit" value="Login">
+        </form>
+
+    {% endblock content %}
+    
+</html>
